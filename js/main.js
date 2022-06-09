@@ -5,6 +5,7 @@ window.onload = function() {
         width: 900,
         height: 600,
         scene: [Preload ,StartScene, Scene01],
+        parent: "game-local", 
         physics: {
             
                 default: "arcade",
