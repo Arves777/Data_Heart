@@ -4,6 +4,11 @@ class Scene01 extends Phaser.Scene{
     }
     
     create(){
+        this.MT = this.sound.add("ThemeMusic")
+        this.MT.play({
+            volume: 0.3,
+            loop: true
+        })
         this.sky = this.add.image(0,0,"sky").setOrigin(0,0)
         this.sky.displayWidth = 1400
         this.sky.displayHeight = 600

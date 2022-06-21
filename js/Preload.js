@@ -4,7 +4,9 @@ class Preload extends Phaser.Scene{
     }
 
     preload(){
-        //this.load.audio("")
+        this.load.audio("ThemeMusic", [ "snd/musictheme.mp3"])
+        this.load.audio("StartTheme", ["snd/starttheme.mp3"])
+        this.load.audio("ConfirmSound", ["snd/confirmsound.mp3"])
         this.load.image("start", "img/Start.jpg")
         this.load.image("sky", "img/fundo1.png")
         this.load.image("platform", "img/platform.png")
